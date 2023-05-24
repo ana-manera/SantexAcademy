@@ -2,11 +2,18 @@ html {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
   }
+
+  /*NavBar */
   #navbar {
     display: flex; 
     justify-content: space-between;
     border-bottom: 1px solid gray; 
-    padding: 14px; 
+    padding: 10px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
     
   }
   p {
@@ -17,7 +24,8 @@ html {
   }
   
   button {
-    background-color: white;
+    background-color: #ffffff;
+    color: #202020;
     border-radius: 30px;
     padding: 0px 1.5em;
     height: 2.5em;
@@ -25,12 +33,80 @@ html {
     font-size: 0.8em;
     width: 10em;
   }
-  
-  
+  button:hover {
+    background-color: #202020;
+    color: #ffffff;
+  }
+   
   div#navbar-left img {
     width: 8em;
   }
+
+
+/*Lema */
+  .lema {
+    padding: 20px;
+    text-align: center;
+    height:70vh;
+  }
   
+  .lema h2{
+    width: 50%;
+    font-size: 24px;
+    color: #202020;
+    margin: 70px auto 40px auto;
+  }
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .b-negro, .b-lila {
+    background-color:#ffffff;
+    color:  #202020;
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+  }
+  
+  .b-lila {
+    background-color: #ffffff;
+    border: 2px solid #6b53f0;
+    color:  #6b53f0;
+  }
+  
+  .b-lila:hover {
+    background-color:  #6b53f0;
+    color: #ffffff;
+  }
+/* .Impacto*/
+.impacto {
+  background-color: #201b24;
+  padding: 20px;
+  text-align: center;
+}
+
+.impacto h2 {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.impacto-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.impacto-container p {
+  margin: 10px;
+  color: #ffffff;
+}
+ 
+
   @media (width >= 2500px) {
     html {
         font-size: 28px;
